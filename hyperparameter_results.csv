@@ -1,0 +1,2 @@
+learning_rate,gamma,batch_size,epsilon_start,epsilon_end,exploration_fraction,avg_reward,std_reward,min_reward,max_reward,avg_episode_length,total_eval_episodes,training_time_seconds,total_timesteps,policy_type,hyperparameter_set_name,experiment_name,timestamp
+0.0001,0.99,32,1.0,0.05,0.1,-12970.0,3251.1690205216955,-18300.0,-8200.0,738.0,10,257.901907,100000,CNN,baseline,exp_20260321T122512,2026-03-21T12:29:48.885136
