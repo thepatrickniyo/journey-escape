@@ -1,0 +1,7 @@
+# Python virtual environments
+.venv/
+
+#Logs
+logs/
+*.log
+.tools.json
