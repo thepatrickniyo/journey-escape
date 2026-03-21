@@ -1,7 +1,13 @@
-# JourneyEscape-ML_tech2
+# JourneyEscape ML Tech II
+
 # **DQN Atari Agent — JourneyEscape Project**
 
-### *Group Members: David · Gaius · Renne · Dean*
+### Group Members:
+
+- Patrick 
+- Alice
+- Kellia
+- Phinnah
 
 ## **1. Project Overview**
 
