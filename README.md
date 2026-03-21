@@ -134,7 +134,7 @@ Play video []
 # **10. Gameplay Demo**
 
 Place video at:
-Play video [https://drive.google.com/file/d/14jswet-gQKuBrTpUyycXnfZKkGpPjBbT/view?usp=drive_link]
+Play video []
 
 ---
 
