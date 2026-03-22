@@ -163,6 +163,23 @@ Each member ran 10 experiments varying key DQN hyperparameters. Results are draw
 
 ---
 
+## Kellia — Hyperparameter Experiments
+
+| Exp | lr | gamma | batch | eps_start | eps_end | eps_decay | Observed Behavior |
+|-----|----|-------|-------|-----------|---------|-----------|-------------------|
+| 1 | 5e-4 | 0.95 | 32 | 1.0 | 0.05 | 0.10 | Moderate lr with small batch and decent gamma. Slow gradient updates due to small batch; moderate but inconsistent performance (-11580). |
+| 2 | 5e-4 | 0.97 | 64 | 0.9 | 0.10 | 0.20 | Best result. Higher gamma with medium batch and fast epsilon decay. Good balance of stability and exploitation (-7750). |
+| 3 | 5e-4 | 0.99 | 128 | 1.0 | 0.00 | 0.05 | Max gamma and large batch with slow epsilon decay and full greedy end. Stable but slow convergence; large batch helped consistency (-11710). |
+| 4 | 5e-4 | 0.92 | 32 | 0.8 | 0.05 | 0.10 | Reduced gamma and small batch with partial initial exploration caused noisy updates and weaker long-term planning (-17820). |
+| 5 | 5e-4 | 0.95 | 64 | 1.0 | 0.20 | 0.20 | High epsilon floor maintained too much exploration throughout; fast decay couldn't compensate, limiting policy exploitation (-14440). |
+| 6 | 5e-4 | 0.97 | 128 | 0.9 | 0.10 | 0.05 | Second best. Large batch with high gamma and slow decay allowed stable, consistent learning with good exploitation (-6800). |
+| 7 | 5e-4 | 0.99 | 32 | 1.0 | 0.00 | 0.20 | Max gamma with small batch and fast epsilon decay; agent went greedy too early before learning adequately — worst result (-20660). |
+| 8 | 5e-4 | 0.93 | 64 | 0.8 | 0.05 | 0.10 | Moderate gamma and batch with low epsilon end. Partial initial exploration aided early diversity; reasonable convergence (-9180). |
+| 9 | 5e-4 | 0.96 | 128 | 1.0 | 0.10 | 0.05 | Strong gamma and large batch with slow decay; steady improvement but exploration maintained slightly too long (-12160). |
+| 10 | 5e-4 | 0.94 | 32 | 0.9 | 0.20 | 0.10 | High epsilon floor and small batch prevented full exploitation; moderate gamma limited long-term value estimation (-16930). |
+
+---
+
 # **8. Policy Architecture Comparison**
 
 ## MLPPolicy
