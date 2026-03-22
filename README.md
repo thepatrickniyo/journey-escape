@@ -2,6 +2,14 @@
 
 # **DQN Atari Agent — JourneyEscape Project**
 
+# 🎮 **Gameplay Demo**
+
+[![Watch the demo](https://img.youtube.com/vi/6q1p2EbelBE/0.jpg)](https://youtu.be/6q1p2EbelBE)
+
+[https://youtu.be/6q1p2EbelBE](https://youtu.be/6q1p2EbelBE)
+
+---
+
 ### Group Members:
 
 - Patrick 
@@ -90,7 +98,6 @@ python train.py
 ```bash
 python play.py
 ```
-Play video []
 ### What `play.py` does
 
 - Loads the trained model
@@ -191,14 +198,7 @@ Each member ran 10 experiments varying key DQN hyperparameters. Results are draw
 
 ---
 
-# **10. Gameplay Demo**
-
-Place video at:
-Play video []
-
----
-
-# **11. Project Structure**
+# **10. Project Structure**
 
 ```
 .
